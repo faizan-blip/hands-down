@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* height: 150vh; */
+    padding: 0!important;
+  }
+  .glass1 , .glass2,  .glass3 {
+    height: 27em;
+    width: 55em;
+    min-width: 40em;
+    border-radius: 12px;
+    background: linear-gradient(96.73deg, rgba(0, 0, 0, 0.25) 0%, rgba(51, 45, 69, 0.25) 99.44%);
+
+    box-shadow:  0px 2px 5px #000000 ,
+                 0px -2px 5px #332D45 ;
+/* Note: backdrop-filter has minimal browser support */
+
+/* border-radius: 25px; */
+    margin: 3.2em 4em;
+  }
+  .glass0 {
+    height: 27em;
+    width: 55em;
+    min-width: 40em;
+    border-radius: 12px;
+    background: linear-gradient(96.73deg, rgba(0, 0, 0, 0.25) 0%, rgba(51, 45, 69, 0.25) 99.44%);
+
+    box-shadow:  0px 2px 5px #000000 ,
+                 0px -2px 5px #332D45 ;
+/* Note: backdrop-filter has minimal browser support */
+
+/* border-radius: 25px; */
+    margin: 5.5em 4em;
+
+  }
+ 
+ 
+    /* about */
+  #detailabout{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  #detailabout h2 ,  #detailculture h2 , #detailwork h2, #detailcultures h2{ 
+    padding: 0.5em 0.5em;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+  }
+  #detailabout p ,   #detailculture p , #detailwork p ,  #detailcultures p  {
+    /* padding: 8px 0.5em; */
+    font-size: 17.2px;
+    font-family: 'Poppins', sans-serif;
+    color: #FDF2F2;
+    padding: 0 1em;
+  }
+   #detailabout ul ,   #detailculture ul , #detailwork ul ,  #detailabout ol , #detailwork ol{
+    font-size: 17.2px;
+    font-family: 'Poppins', sans-serif;
+    color: #FDF2F2;
+    padding: 0 2em;
+   }
+   #detailcultures ul{
+    font-size: 17.2px;
+    font-family: 'Poppins', sans-serif;
+    color: #FDF2F2;
+    padding: 2em 2em;
+   } 
+  #detailabout p ul , #detailwork p ol{
+    padding-left: 1.5em;
+  }
+
+  #detailculture  p ul{
+    padding-top: 3em;
+    padding-left: 1.5em;
+  }
+
+
+  .aboutpng{
+    background-color: #332D45;
+    padding: 2em 2em;
+    position: relative;
+    right: 3.9em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media(max-width:1259px){
+    #detailabout p ,   #detailculture p , #detailwork p , #detailcultures p {
+        /* padding: 8px 0.5em; */
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: #FDF2F2;
+        padding: 0 1em;
+      }
+      .aboutpng{
+        transform: translateX(-100%);
+        visibility: hidden;
+      }
+      .glass1, .glass2 ,.glass3 {
+        position: relative;
+        left: 9.5em;
+        width: 75em!important;
+        margin: 3.2em 0;
+        min-width: 39em;
+        min-height: 30em;
+      }
+      .glass0{
+        position: relative;
+        left: 9.5em;
+        top: 2em;
+        width: 75em!important;
+        margin: 5.5em 0;
+        min-width: 39em;
+        min-height: 28em;
+      }
+  }
+  @media(max-width:735px){
+.glass0{
+        min-width: 30em;
+        min-height: 35em;
+    }
+    .glass1{
+        min-height: 43em;
+        min-width: 30em;
+    }
+    .glass2{
+        min-height: 35em;
+        min-width: 30em;
+    }
+    .glass3{
+        min-height: 35em;
+        min-width: 30em;
+    }
+  }
+  @media(max-width:500px){
+    .glass0{
+        min-width: 25em;
+        min-height: 41em;
+        margin: 2.2em 4em;
+    }
+    .glass1{
+        min-height: 51em;
+        min-width:25em;
+        margin: 2.2em 4em;
+    }
+    .glass2{
+        min-height: 42em;
+        min-width: 25em;
+        margin: 2.2em 4em;
+    }
+    .glass3{
+        min-height: 44em;
+        min-width:25em;
+        margin: 2.2em 4em;
+    }
+  }
+  @media(max-width:460px){
+     .glass0{
+        min-width: 20em;
+        min-height: 51em;
+        position: relative;
+        left: 9.9em;
+        margin: 2.2em 4em;
+    }
+    .glass1{
+        min-width: 20em;
+        min-height: 64em;
+        position: relative;
+        left: 9.9em;
+        margin: 2.2em 4em;
+    }
+    .glass2{
+        min-width: 20em;
+        min-height: 53em;
+        position: relative;
+        left: 9.9em;
+        margin: 2.2em 4em;
+    }
+    .glass3{
+        min-width: 20em;
+        min-height: 51em;
+        position: relative;
+        left: 9.9em;
+        margin: 2.2em 4em;
+    }
+  }
